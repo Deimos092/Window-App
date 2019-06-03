@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3117887A-BB96-44F9-A145-AB20BB6DCC35}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Combo_Programs</RootNamespace>
+    <AssemblyName>Сборник программ МКА</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Combo Program</ProductName>
+    <PublisherName>Кирилл</PublisherName>
+    <SuiteName>Кирилл</SuiteName>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.2.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Program.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Combo_Programs.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>209ADA4B16C607DD7F9D3E9EB69E6D50D55D8857</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Information_About_All_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alaram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alaram.Designer.cs">
+      <DependentUpon>Alaram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alert_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alert_info.Designer.cs">
+      <DependentUpon>Alert_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calc.Designer.cs">
+      <DependentUpon>Calc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpInfo.Designer.cs">
+      <DependentUpon>HelpInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoTxT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoTxT.Designer.cs">
+      <DependentUpon>InfoTxT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form.Designer.cs">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyPage.Designer.cs">
+      <DependentUpon>MyPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Number_System.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Number_System.Designer.cs">
+      <DependentUpon>Number_System.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumSys.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedactorTxt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RedactorTxt.Designer.cs">
+      <DependentUpon>RedactorTxt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reverse_System.cs" />
+    <Compile Include="Sales Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales Manager.Designer.cs">
+      <DependentUpon>Sales Manager.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Alaram.resx">
+      <DependentUpon>Alaram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alert_info.resx">
+      <DependentUpon>Alert_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calc.resx">
+      <DependentUpon>Calc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpInfo.resx">
+      <DependentUpon>HelpInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoTxT.resx">
+      <DependentUpon>InfoTxT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form.resx">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyPage.resx">
+      <DependentUpon>MyPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Number_System.resx">
+      <DependentUpon>Number_System.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RedactorTxt.resx">
+      <DependentUpon>RedactorTxt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales Manager.resx">
+      <DependentUpon>Sales Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Information_About_All_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-translate-detected_318-48777.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-translate-detected_318-487771.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-translate-detected_318-487772.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-translate-detected_318-487773.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Input %28Textarea%29_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Formatting %28Bold%29 - Blue_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Formatting %28Italic%29 - Blue_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Formatting %28Underline%29 - Blue_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text Align %28Left%29 - Blue_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text Align %28Center%29 - Blue_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text Align %28Right%29 - Blue_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Formatting %28Subscript%29 - Blue_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Case %28All Caps%29 - Blue_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text Colour %28Foreground%29 - Blue_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text Colour %28Background%29 - Blue_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Input %28Radio%29 - Blue_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text Indent %28Increase%29 - Blue_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text Indent %28Decrease%29 - Blue_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eraser_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Formatting %28Superscript%29 - Blue_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Formatting %28Subscript%29 - Blue_24x241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search Document_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w256h2561372351017Save256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Visit_Back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Form.ico" />
+    <Content Include="Program.ico" />
+    <Content Include="Resources\alarm.ICO" />
+    <None Include="Resources\XY1.jpg" />
+    <None Include="Resources\XY.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
